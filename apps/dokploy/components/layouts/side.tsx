@@ -362,6 +362,13 @@ const MENU: Menu = {
 			icon: Database,
 			isEnabled: ({ permissions }) => !!permissions?.destination.read,
 		},
+		{
+			isSingle: true,
+			title: "Secret Providers",
+			url: "/dashboard/settings/secret-providers",
+			icon: KeyRound,
+			isEnabled: ({ permissions }) => !!permissions?.secretProvider.read,
+		},
 
 		{
 			isSingle: true,

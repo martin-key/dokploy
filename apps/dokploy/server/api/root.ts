@@ -38,6 +38,7 @@ import { redisRouter } from "./routers/redis";
 import { registryRouter } from "./routers/registry";
 import { rollbackRouter } from "./routers/rollbacks";
 import { scheduleRouter } from "./routers/schedule";
+import { secretProviderRouter } from "./routers/secret-provider";
 import { securityRouter } from "./routers/security";
 import { serverRouter } from "./routers/server";
 import { settingsRouter } from "./routers/settings";
@@ -97,6 +98,7 @@ export const appRouter = createTRPCRouter({
 	customRole: customRoleRouter,
 	auditLog: auditLogRouter,
 	schedule: scheduleRouter,
+	secretProvider: secretProviderRouter,
 	rollback: rollbackRouter,
 	volumeBackups: volumeBackupsRouter,
 	environment: environmentRouter,
